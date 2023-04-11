@@ -4,7 +4,7 @@ A mini-app identifies objects in photos and translates their names into New Zeal
 # How to Ask ChatGPT
 
 ## how to use git?
-  - what is feature based?
+  - what is feature based? ✅
   - what is trunk based?
   - which one is better?
   - how keep my git branches clean and beauty?
