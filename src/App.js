@@ -1,9 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
-import HomePage from './components/HomePage';
-import LoginPage from './components/LoginPage';
-import RegisterPage from './components/RegisterPage';
-import FlashcardsPage from './components/FlashcardsPage';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import FlashcardsPage from './pages/FlashcardsPage';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 

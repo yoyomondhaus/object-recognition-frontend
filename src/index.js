@@ -1,19 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import ReactDOM from 'react-dom/client'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from "@auth0/auth0-react";
 
-ReactDOM.render(
+const root = document.getElementById('root');
+ReactDOM.createRoot(root).render(
     <Auth0Provider
-        domain="dev-syp20lw77uhpr838.au.auth0.com"
-        clientId="ZoWhf1oifPrHTZw5z77guWN1YoskoIDG"
-        redirectUri="http://localhost:3000/callback"
+        domain={process.env.REACT_APP_AUTH0_DOMAIN}
+        clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
+        redirectUri={process.env.REACT_APP_AUTH0_REDIRECT_URI}
     >
         <App />
     </Auth0Provider>,
-    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
