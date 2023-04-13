@@ -1,5 +1,4 @@
 import React from 'react';
-import UseAuth0 from "@auth0/auth0-react/src/use-auth0";
 import {useAuth0} from "@auth0/auth0-react";
 
 function LoginButton(){
